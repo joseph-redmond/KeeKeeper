@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.josephredmond.keykeeper.view.pages.InitialForm">
+  <grid id="27dc6" binding="JPLMain" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="4b326" class="javax.swing.JLabel" binding="JLBLTitle">
+        <constraints border-constraint="North"/>
+        <properties>
+          <horizontalAlignment value="0"/>
+          <text value="Welcome to the KeyKeeper Password Manager"/>
+        </properties>
+      </component>
+      <grid id="427f4" binding="JPLCenterMain" layout-manager="FormLayout">
+        <rowspec value="center:d:grow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:d:grow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:d:grow"/>
+        <colspec value="fill:d:grow"/>
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="b47d" binding="JPLCenterMainCenter" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="c2c1" class="javax.swing.JButton" binding="JBTNOpen">
+                <constraints/>
+                <properties>
+                  <label value="Open"/>
+                  <text value="Open"/>
+                </properties>
+              </component>
+              <hspacer id="2e50b">
+                <constraints/>
+              </hspacer>
+              <component id="e01a1" class="javax.swing.JButton" binding="JBTNCreate">
+                <constraints/>
+                <properties>
+                  <label value="Create"/>
+                  <text value="Create"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <vspacer id="b9bf1">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+              <forms defaultalign-vert="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="622fe">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+              <forms defaultalign-vert="false"/>
+            </constraints>
+          </vspacer>
+        </children>
+      </grid>
+      <grid id="2dc4b" binding="JPLBottomMain" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="aa9c2" class="javax.swing.JLabel" binding="JLBLPassword">
+            <constraints/>
+            <properties>
+              <text value="Password"/>
+            </properties>
+          </component>
+          <component id="ac3b2" class="javax.swing.JPasswordField" binding="JPFPassword">
+            <constraints/>
+            <properties>
+              <preferredSize width="300" height="30"/>
+            </properties>
+          </component>
+          <component id="f1275" class="javax.swing.JButton" binding="JBTNLoadPassword">
+            <constraints/>
+            <properties>
+              <text value="Load Password"/>
+            </properties>
+          </component>
+          <component id="bcece" class="javax.swing.JButton" binding="JBTNChangePassword">
+            <constraints/>
+            <properties>
+              <text value="Change Password"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
